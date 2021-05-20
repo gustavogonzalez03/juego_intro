@@ -14,7 +14,7 @@ public class Alien extends Actor
      */
     public void act() 
     {
-        destroy();
+        /*destroy();*/
     }        
     public void destroy()
     {
@@ -23,8 +23,8 @@ public class Alien extends Actor
         if(bullet != null)
         {
             World world;
-            world = getWorld();
-            world.removeObject(this);          
+            world = getWorld();            
+            world.removeObject(this);                
         }
     }
 }

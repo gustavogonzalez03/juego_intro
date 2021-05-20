@@ -34,19 +34,15 @@ public class Bullet extends Actor
         }
     }
     public void kill()
-    {
-        /*
+    {        
         Actor alien;
         alien = getOneObjectAtOffset(0,0,Alien.class);
         if(alien != null)
         {
             World world;
             world = getWorld();
-            world.removeObject(alien);          
-        }
-        */
-        
-        
-        
+            world.removeObject(alien);
+            world.removeObject(this);          
+        }                               
     }
 }
